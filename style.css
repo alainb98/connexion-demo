@@ -20,16 +20,6 @@
   background-size: cover;
 }
 
-@media (min-width: 48em) {
-  .login-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    padding: 3rem 6rem;
-    z-index: 1;
-  }
-}
 
 .login {
   font-weight: bolder;
@@ -85,4 +75,29 @@
 
 div > h1 {
   font-size: 3rem;
+}
+
+@media only screen and  (max-width: 48em) {
+  .login-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 6rem;
+    z-index: 1;
+  }
+
+  .background {
+    display: none;
+  }
+}
+
+@media only screen and  (max-width: 48em) {
+  .login-area {
+    padding: 1em;
+  }
+
+  .background {
+    display: none;
+  }
 }
